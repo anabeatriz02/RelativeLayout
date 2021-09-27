@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashView_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/BLUE"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_medina" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/Text_View_Nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Gabriel Medina"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/Text_View_Profissão"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Trocar foto"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="52dp"
+            android:text="Dados de autenticação"
+            android:drawableStart="@drawable/on"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="E-mail"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/edit_text_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seu peso"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/edit_text_peso"
+            android:padding="24dp"
+            android:layout_marginBottom="16dp"
+            android:drawableStart="@drawable/homi"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            android:hint="Nome"
+            android:padding="24dp"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            android:hint="Altura"
+            android:padding="24dp"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            android:hint="Data de Nascimento"
+            android:padding="24dp"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            android:hint="Profissão"
+            android:padding="24dp"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            android:hint="Sexo"
+            android:padding="24dp"
+            android:textColor="@android:color/white"
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+            <RadioButton
+                android:id="@+id/masculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masculino"
+                android:layout_marginEnd="50dp"/>
+            <RadioButton
+                android:id="@+id/feminino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feminino" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
